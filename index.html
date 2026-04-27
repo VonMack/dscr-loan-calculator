@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>DSCR Loan Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="card">
+  <h1>DSCR Loan Calculator</h1>
+  <p class="helper">Enter property income and debt costs to underwrite DSCR.</p>
+
+  <div class="toggle-row">
+    <button class="toggle-btn active" id="monthlyBtn" type="button">Monthly</button>
+    <button class="toggle-btn" id="annualBtn" type="button">Annual</button>
+  </div>
+
+  <div class="field-group">
+    <label id="incomeLabel" for="rent">Monthly Rental Income</label>
+    <input type="text" id="rent" placeholder="$2,500.00">
+    <div class="error" id="rentError"></div>
+  </div>
+
+  <div class="field-group">
+    <label id="mortgageLabel" for="mortgage">Monthly P&I</label>
+    <input type="text" id="mortgage" placeholder="$1,500.00">
+  </div>
+
+  <div class="field-group">
+    <label id="taxesLabel" for="taxes">Monthly Taxes</label>
+    <input type="text" id="taxes" placeholder="$250.00">
+  </div>
+
+  <div class="field-group">
+    <label id="insuranceLabel" for="insurance">Monthly Insurance</label>
+    <input type="text" id="insurance" placeholder="$120.00">
+  </div>
+
+  <div class="field-group">
+    <label id="hoaLabel" for="hoa">Monthly HOA</label>
+    <input type="text" id="hoa" placeholder="$75.00">
+  </div>
+
+  <button id="calcBtn" type="button">Calculate DSCR</button>
+
+  <div class="grid">
+    <div class="chart-card">
+      <canvas id="dscrChart"></canvas>
+    </div>
+
+    <div class="summary-card" id="resultCard" style="display:none;">
+      <div class="result" id="dscrResult"></div>
+      <div class="status-pill" id="statusPill"></div>
+      <div class="summary-title">Lender Summary</div>
+      <div class="summary-lines" id="summaryLines"></div>
+    </div>
+  </div>
+
+  <div class="action-row">
+    <button class="secondary-btn" id="copyBtn" type="button">Copy Summary</button>
+    <button class="secondary-btn" id="csvBtn" type="button">Download CSV</button>
+    <button class="secondary-btn" id="textBtn" type="button">Download Text</button>
+  </div>
+
+  <div class="export-status" id="exportStatus"></div>
+</div>
+    <script src='https://cdn.jsdelivr.net/npm/chart.js'></script><script  src="./script.js"></script>
+
+  </body>
+  
+</html>
