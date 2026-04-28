@@ -237,5 +237,26 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("calcBtn").addEventListener("click", calculateDSCR);
   document.getElementById("copyBtn").addEventListener("click", copyResults);
   document.getElementById("textBtn").addEventListener("click", downloadText);
-  document.getElementById("csvBtn").addEventListener("click", downloadCSV);
+  document.getElementById("csvBtn").addEventListener("click", downloadCSV);  
 });
+.score-meaning {
+  margin-top: 16px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.score-meaning-title {
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 8px;
+  font-size: 0.98rem;
+}
+
+.score-meaning-item {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #334155;
+  margin-top: 4px;
+}
