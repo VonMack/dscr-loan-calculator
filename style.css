@@ -234,3 +234,31 @@ input:focus {
   color: #334155;
   margin-top: 4px;
 }
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  button {
+    margin-top: 8px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  .score-meaning {
+    padding: 12px;
+  }
+}
