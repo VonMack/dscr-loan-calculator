@@ -1,4 +1,4 @@
-*,
+  *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -281,4 +281,14 @@ button {
 button:hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.14);
+}
+.disclaimer {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-left: 4px solid #64748b;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  border-radius: 10px;
 }
