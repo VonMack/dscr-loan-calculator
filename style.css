@@ -390,4 +390,43 @@ button:hover {
     grid-column: 1 / -1;
   }
 }
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 17px;
+  }
+
+  body {
+    padding: 12px;
+  }
+
+  .summary-card,
+  .score-meaning,
+  .disclaimer {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    line-height: 1.15;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  p, li, label, input, button, select {
+    font-size: 16px;
+  }
+
+  input, button, select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 
