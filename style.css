@@ -310,3 +310,29 @@ button:hover {
     align-self: start;
   }
 }
+
+@media (min-width: 769px) {
+  #resultCard {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 18px;
+    align-items: start;
+  }
+
+  #dscrResult {
+    grid-column: 1;
+  }
+
+  #statusPill {
+    grid-column: 1;
+  }
+
+  .score-meaning {
+    grid-column: 2;
+    margin-top: 0;
+  }
+
+  .score-meaning-title {
+    margin-top: 0;
+  }
+}
