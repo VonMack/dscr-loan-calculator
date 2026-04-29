@@ -292,3 +292,21 @@ button:hover {
   line-height: 1.5;
   border-radius: 10px;
 }
+@media (min-width: 769px) {
+  #resultCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+
+  #dscrResult,
+  #statusPill {
+    grid-column: 1;
+  }
+
+  .score-meaning {
+    grid-column: 2;
+    align-self: start;
+  }
+}
