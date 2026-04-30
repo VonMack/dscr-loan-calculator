@@ -12,6 +12,22 @@ function formatMoney(value) {
     currency: "USD"
   }).format(value);
 }
+function formatField(input) {
+  input.addEventListener("focus", () => {
+    input.value = String(input.value).replace(/[^0-9.-]/g, "");
+  });
+
+  input.addEventListener("blur", () => {
+    const num = moneyToNumber(input.value);
+    input.value = num ? formatMoney(num) : "";
+  });
+}
+
+formatField(document.getElementById("rent"));
+formatField(document.getElementById("mortgage"));
+formatField(document.getElementById("taxes"));
+formatField(document.getElementById("insurance"));
+formatField(document.getElementById("hoa"));
 
 function updateLabels() {
   const prefix = currentMode === "monthly" ? "Monthly" : "Annual";
