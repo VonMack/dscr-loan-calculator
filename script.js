@@ -158,7 +158,8 @@ function calculateDSCR() {
   statusPill.innerText = statusText;
   statusPill.className = `status-pill ${statusClass}`;
 
-  summaryLines.innerHTML = `
+ summaryLines.innerHTML = `
+  <div><strong>Summary Details</strong></div>
   <div><strong>Mode:</strong> ${currentMode === "monthly" ? "Monthly" : "Annual (normalized to monthly)"}</div>
   <div><strong>Rent:</strong> ${formatMoney(rent)}</div>
   <div><strong>P&I:</strong> ${formatMoney(mortgage)}</div>
@@ -166,9 +167,10 @@ function calculateDSCR() {
   <div><strong>Insurance:</strong> ${formatMoney(insurance)}</div>
   <div><strong>HOA:</strong> ${formatMoney(hoa)}</div>
   <div><strong>Total PITIA:</strong> ${formatMoney(pitia)}</div>
-  <div><strong>PITIA:</strong> Principal, Interest, Taxes, Insurance, & Assoc. dues </div>
+  <div><strong>PITIA:</strong> Principal, Interest, Taxes, Insurance & Assoc. dues</div>
   <div><strong>Formula:</strong> Rent ÷ PITIA = ${rent.toFixed(2)} ÷ ${pitia.toFixed(2)}</div>
 `;
+
 
 
   resultCard.style.display = "block";
