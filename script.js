@@ -150,7 +150,7 @@ function calculateDSCR() {
   <div><strong>Insurance:</strong> ${formatMoney(insurance)}</div>
   <div><strong>HOA:</strong> ${formatMoney(hoa)}</div>
   <div><strong>Total PITIA:</strong> ${formatMoney(pitia)}</div>
-  <div><strong>PITIA:</strong> Principal, Interest, Taxes, Insurance, & Association dues </div>
+  <div><strong>PITIA:</strong> Principal, Interest, Taxes, Insurance, & Assoc. dues </div>
   <div><strong>Formula:</strong> Rent ÷ PITIA = ${rent.toFixed(2)} ÷ ${pitia.toFixed(2)}</div>
 `;
 
