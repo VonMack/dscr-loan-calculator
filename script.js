@@ -143,15 +143,17 @@ function calculateDSCR() {
   statusPill.className = `status-pill ${statusClass}`;
 
   summaryLines.innerHTML = `
-    <div><strong>Mode:</strong> ${currentMode === "monthly" ? "Monthly" : "Annual (normalized to monthly)"}</div>
-    <div><strong>Rent:</strong> ${formatMoney(rent)}</div>
-    <div><strong>P&I:</strong> ${formatMoney(mortgage)}</div>
-    <div><strong>Taxes:</strong> ${formatMoney(taxes)}</div>
-    <div><strong>Insurance:</strong> ${formatMoney(insurance)}</div>
-    <div><strong>HOA:</strong> ${formatMoney(hoa)}</div>
-    <div><strong>Total PITIA:</strong> ${formatMoney(pitia)}</div>
-    <div><strong>Formula:</strong> Rent ÷ PITIA = ${rent.toFixed(2)} ÷ ${pitia.toFixed(2)}</div>
-  `;
+  <div><strong>Mode:</strong> ${currentMode === "monthly" ? "Monthly" : "Annual (normalized to monthly)"}</div>
+  <div><strong>Rent:</strong> ${formatMoney(rent)}</div>
+  <div><strong>P&I:</strong> ${formatMoney(mortgage)}</div>
+  <div><strong>Taxes:</strong> ${formatMoney(taxes)}</div>
+  <div><strong>Insurance:</strong> ${formatMoney(insurance)}</div>
+  <div><strong>HOA:</strong> ${formatMoney(hoa)}</div>
+  <div><strong>Total PITIA:</strong> ${formatMoney(pitia)}</div>
+  <div><strong>PITIA:</strong> Principal, Interest, Taxes, Insurance, & Association dues </div>
+  <div><strong>Formula:</strong> Rent ÷ PITIA = ${rent.toFixed(2)} ÷ ${pitia.toFixed(2)}</div>
+`;
+
 
   resultCard.style.display = "block";
   updateChart(dscr);
