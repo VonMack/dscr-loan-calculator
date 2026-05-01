@@ -114,24 +114,28 @@ input:focus {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
 .chart-card,
-.summary-card {
-  border: 1px solid #e2e8f0;
-  background: #f8fafc;
-  border-radius: 14px;
-  padding: 16px;
-}
-
-.chart-card {
-  min-height: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.summary-card,
+.score-meaning {
+  width: 100%;
+}  
 
 .result {
   text-align: center;
