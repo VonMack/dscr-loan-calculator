@@ -50,24 +50,30 @@
   <button id="calcBtn" type="button">Calculate DSCR</button>
 
   <div class="grid">
-  <div class="chart-card">
-    <canvas id="dscrChart"></canvas>
-  </div>
-
-  <div class="summary-card" id="resultCard" style="display:none;">
-    <div class="result" id="dscrResult"></div>
-    <div class="status-pill" id="statusPill"></div>
-
-    <div class="disclaimer">
-      <strong>Disclaimer:</strong> This calculator is provided for general informational purposes only. Results are estimates and are not guaranteed to be accurate, complete, or suitable for any specific purpose or situation. By using this tool, you accept all risk associated with its use.
+  <div class="left-column">
+    <div class="chart-card">
+      <canvas id="dscrChart"></canvas>
     </div>
 
+    <div class="summary-card" id="resultCard" style="display:none;">
+      <div class="result" id="dscrResult"></div>
+      <div class="status-pill" id="statusPill"></div>
+
+      <div class="disclaimer">
+        <strong>Disclaimer:</strong> This calculator is provided for general informational purposes only. Results are estimates and are not guaranteed to be accurate, complete, or suitable for any specific purpose or situation. By using this tool, you accept all risk associated with its use.
+      </div>
+
+      <div class="summary-lines" id="summaryLines"></div>
+    </div>
+  
+  <div class="right-column">
     <div class="score-meaning">
       <div class="score-meaning-title">How Lenders Interpret Your Score</div>
       <div class="score-meaning-item"><strong>1.25+</strong> → Strong deal profile</div>
       <div class="score-meaning-item"><strong>1.00–1.24</strong> → Borderline / lender-dependent</div>
       <div class="score-meaning-item"><strong>Below 1.00</strong> → May not qualify</div>
     </div>
+  </div>                                      
 
     <div class="summary-lines" id="summaryLines"></div>
   </div>
