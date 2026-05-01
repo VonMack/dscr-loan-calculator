@@ -339,58 +339,24 @@ button:hover {
   }
 }
 #resultCard {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
+  display: block;
 }
 
-#resultCard .result,
-#resultCard .status-pill,
-#resultCard .score-meaning {
-  grid-column: 1;
+.summary-title {
+  margin-top: 14px;
+  font-weight: 800;
+  color: #0f172a;
 }
 
-#resultCard .score-meaning {
-  margin-top: 0;
+.summary-lines {
+  margin-top: 8px;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #334155;
 }
 
-#resultCard .score-meaning-title {
-  margin-top: 0;
-}
-
-@media (min-width: 769px) {
-  #resultCard {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "title title"
-      "left right";
-    column-gap: 18px;
-    row-gap: 12px;
-    align-items: start;
-  }
-
-  #resultCard::before {
-    content: "Lender Summary";
-    grid-area: title;
-    display: block;
-    text-align: center;
-    font-weight: 800;
-    font-size: 1.15rem;
-    color: var(--text);
-    margin-bottom: 2px;
-  }
-
-  #resultCard .result {
-    grid-area: left;
-  }
-
-  #resultCard .score-meaning {
-    grid-area: right;
-  }
-
-  #resultCard .status-pill {
-    grid-column: 1 / -1;
-  }
+.summary-lines div {
+  margin-top: 4px;
 }
 @media (max-width: 768px) {
   html, body {
