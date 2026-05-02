@@ -12,13 +12,7 @@ body {
   background: linear-gradient(180deg, #eff6ff 0%, #e2e8f0 100%);
 }
 
-.card {
-  background: #fff;
-  padding: 24px;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
-  margin: 24px auto;
-}
+
 
 h1 {
   text-align: center;
@@ -212,10 +206,14 @@ input:focus {
   }
 
   .card {
-    padding: 18px;
-    border-radius: 14px;
-  }
+  background: #fff;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  margin: 24px auto 24px 40px;
+  max-width: 980px;
 }
+
 .score-meaning {
   margin-top: 16px;
   padding: 14px;
