@@ -210,8 +210,9 @@ input:focus {
   padding: 24px;
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
-  margin: 24px auto 24px 40px;
+  margin: 24px 0 24px 40px;
   max-width: 980px;
+  width: calc(100% - 40px);
 }
 
 .score-meaning {
